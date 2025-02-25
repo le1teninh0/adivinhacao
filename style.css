@@ -5,11 +5,13 @@
 }
 
 body {
-  display: flex;
+  display: grid;
   background: #c2e9fb;
   height: 100vh;
 }
 #main {
+  display: block;
+
   border-radius: 8px;
   background: #FFFFFF;
 
@@ -75,4 +77,40 @@ button {
 }
 button:hover {
   background: #6e6ef0;
+}
+
+#tip p {
+  font-weight: bold;
+  color: rgb(168, 146, 17);
+  margin-top: 20px;
+
+}
+
+#result {
+  display: none;
+  margin: auto;
+  width: 428px;
+  height: 200px;
+
+  background: #FFFFFF;
+
+  border-radius: 8px;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+#reset-button {
+  margin-top: 64px;
+  border-radius: 8px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+#result-text {
+  font-size: 16px;
+  color: black;
 }
