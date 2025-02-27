@@ -14,7 +14,7 @@ function jogomain() {
     function tentativas(userguess) {
         let tip = document.getElementById("tip");
         let main = document.getElementById("main");
-        let resultText = document.getElementById("result-text"); // ID correto
+        let resultText = document.getElementById("result-text");
        
         if (userguess < 1 || userguess > 20 || isNaN(userguess)) {
             tip.innerHTML = '<p>Insira um número válido entre 1 e 20</p>';
